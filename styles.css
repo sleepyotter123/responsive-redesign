@@ -1,0 +1,116 @@
+
+p { font-family: Arial; }
+li {font-family: Arial; }
+ol {font-family: Arial; }
+h2 {font-family: Arial; }
+h1 {font-family: Arial; }
+h3 {font-family: Arial; }
+h4 {font-family: Arial; }
+
+/* center the text */
+.project-descrip {
+    display: flex;
+    justify-content: center;
+  }
+
+.interface {
+  /* TODO add styles (hint: use flex!) https://www.w3schools.com/cssref/ */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-around;
+}
+
+.pamela {
+  /* TODO add styles (hint: use flex!) https://www.w3schools.com/cssref/ */
+  display: flex;
+  justify-content: start;
+  align-content: center;
+}
+
+.pamela-image{
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  
+
+  display:inline-block; 
+  vertical-align: middle;
+}
+
+.abe {
+  /* TODO add styles (hint: use flex!) https://www.w3schools.com/cssref/ */
+  display: flex;
+  justify-content: start;
+  align-content: center;
+  padding-top: 25px;
+}
+
+.abe-image{
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  display:inline-block; 
+  vertical-align: middle;
+}
+
+.persona-text{
+  /* position: relative; */
+  width: 100%;
+  /* padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px; */
+
+  display:flex;
+  align-items: center;
+}
+
+
+.storyboard {
+  /* TODO add styles (hint: use flex!) https://www.w3schools.com/cssref/ */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-around;
+}
+
+.heading{
+  color:black;
+  font-size:30px;
+}
+
+.container{
+  display: flex;
+  flex: 1;
+  overflow: auto;
+  flex-direction: row;
+  position: relative;
+  padding: 15px;
+
+}
+
+.body-text{
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+.heading-text{
+  display: flex;
+  flex: 1;
+  overflow: auto;
+  flex-direction: row;
+  position: relative;
+  padding: 15px;
+}
+
+
+
+
+
+
