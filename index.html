@@ -8,6 +8,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,
 			initial-scale=1, shrink-to-fit=no">
+
     
     <!-- import javascript variables and functions -->
     <script src="app.js" defer></script>
@@ -23,7 +24,7 @@
     <div id="navigation-bar" class="container-fluid navbar-light">
       <nav class="navbar navbar-expand-md justify-content-between" >
         <a class="navbar-brand" href="https://sleepyotter123.github.io/final-portfolio/"><h3><b>Sleepy Otter</b></h3></a>
-          <!-- <button
+          <button
             class="navbar-toggler"
             type="button"
             data-toggle="collapse"
@@ -34,13 +35,13 @@
           <div class="collapse navbar-collapse justify-content-between" id="section-options" float="right">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="projects.html">Projects</a>
+                <a class="nav-link" href="index.html">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="projects.html">About</a>
+                <a class="nav-link" href="about.html">About</a>
               </li>
             </ul>
-          </div> -->
+          </div>
       </nav>
     </div>
 
@@ -48,7 +49,7 @@
       <div id="project-descrip" class="body-text">
 
         <h1 class="heading"> Responsive Redesign</h1>
-        <h4> <em>
+        <h4 style="font-size: 20px"> <em>
           Practice the workflow of redesigning a simple website. Identify design flaws of an existing website, and recreate a more effective, responsive website design. 
         </em> </h4>
         <p>
@@ -57,29 +58,43 @@
           Their website details sufficient information about the orchard, but the website has many usability problems and can more effectively convey information in a different format. 
           My redesign will focus on simplicity and enhancing usability. 
           <br>
-
-          <br>
           I chose to redesign the website for Russel Orchards because I found the website difficult to interact with when I tried to plan a trip to the farm; it took me too long to find information about pricing and time for apple picking. 
           An image of the website is shown below.
-
         </p>
-        <div class="interface">
+        <!-- <div class="interface">
           <img class="gallery-item" src="./assets/website.png" alt="Russell Orchard's Website" width="800">
+        </div> -->
+
+        <div class="website-buttons">
+          <div class="col-md-6">
+            <a href="https://www.russellorchards.com/index.php">
+              <div class="button-image">
+                <div class="zoom">
+                  <img src="assets/original-button.png" class="img-fluid" width="600px"/>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-6">
+            <a href="https://sleepyotter123.github.io/russel-orchards/">
+              <div class="button-image">
+                <div class="zoom">
+                  <img src="assets/redesign-button.png" class="img-fluid" width="600px"/>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
-        <p>
-         <br>
-          Russel Orchard's original website can be found <a href="https://www.russellorchards.com/index.php">here</a>
-          <br>
-        </p>
 
         <br>
         <br>
 
         <h2>Finding Problems</h2>
-        <h3>
-            Usability
-        </h3>
-        <p><i>How easy and pleasant the features are to use</i></p>
+        <details><summary style="font-size: 28px">
+            Usability 👥
+        <p style="font-size: 20px"><i>How easy and pleasant the features are to use</i></p>
+        </summary>
         <ul>
           <li>
             The logo for the website disappears when the user scrolls down. When the user returns to the tab, it is not immediately clear which website they are viewing.
@@ -93,12 +108,12 @@
           <li>The background is very distracting and makes it difficult to read text.
              </li>
         </ul>
+      </details>
 
-
-        <h3>
-            Memorability
-        </h3>
-        <p><i>When users return to the design, how long will it take for them to establish proficiency? </i></p>
+      <details><summary style="font-size: 28px">
+        Memorability 💭
+    <p style="font-size: 20px"><i>When users return to the design, how long will it take for them to establish proficiency?</i></p>
+    </summary>
         <ul>
           <li>
             Many of the categories on the menu bar can be grouped together. Having too many is overwhelming for the user. 
@@ -118,11 +133,12 @@
               </ul>
           </li>
         </ul>
+      </details>
 
-        <h3>
-          Learnability
-        </h3>
-        <p><i>How easy is it for users to accomplish tasks the first time they encounter the task? </i></p>
+      <details><summary style="font-size: 28px">
+        Learnability 💡
+      <p style="font-size: 20px"><i>How easy is it for users to accomplish tasks the first time they encounter the task? </i></p>
+      </summary>
         <ul>
           <li>
             There are blank squares at the bottom right corner, which may confuse the user
@@ -134,11 +150,12 @@
             Font sizes, color, and text style (ex. Bold or italics) are not consistent with any theme. 
           </li>
         </ul>
+      </details>
 
-        <h3>
-          Accessibility
-        </h3>
-        <p><i>Can people with disabilities use the website and its tools? </i></p>
+      <details><summary style="font-size: 28px">
+        Accessibility ⚙️
+      <p style="font-size: 20px"><i>Can people with disabilities use the website and its tools?  </i></p>
+      </summary>
         <ul>
           <li>
             The logo is missing alt text. 
@@ -153,6 +170,7 @@
             There is an inaccessible event handler. The time on the top left corner of the website is only accurate when the page is launched. It is not updated consistently and can be misleading to the user. 
           </li>
         </ul>
+      </details>
 
         <!--
 
@@ -180,19 +198,17 @@
           First, I created three wireframes using Balsamiq to address the issues I found.
         </p>
 
-        <div class="interface">
-          <img class="gallery-item" src="./assets/lofi-website.jpg" alt="Lofi Prototype of website" width="800">
+        <div class="lofi-interface">
+          <img class="gallery-item" src="./assets/lofi-website.png" alt="Lofi Prototype of website" height="600">
+          <img class="gallery-item" src="./assets/lofi-tablet.png" alt="Lofi Prototype of tablet" height="600">
+          <img class="gallery-item" src="./assets/lofi-mobile.png" alt="Lofi Prototype of mobile" height="600">
         </div>
-        <div class="interface">
-          <img class="gallery-item" src="./assets/lofi-smaller.png" alt="Lofi Prototype of tablet and mobile" width="800">
-        </div>
-
 
 
         <ol>
-          <li>The logo and menu bar should be pinned to the top of the page to provide users convenient access throughout their experience.</li>
+          <li>The <b>logo </b>and menu bar should be pinned to the top of the page to provide users convenient access throughout their experience.</li>
           <li>
-            The menu bar has been moved to the top of the page because I found it to be more intuitive. I grouped the following categories together to streamline selections for the user:
+            The <b>menu bar </b>has been moved to the top of the page because I found it to be more intuitive. I grouped the following categories together to streamline selections for the user:
             <ul>
               <li>“Store” now includes the Bakery and the shop. </li>
               <li>“Events” now includes Winery, School Tours, Farm Animals, and Calendar
@@ -202,13 +218,13 @@
           </li>
           On a tablet and mobile screen, the menu bar should condense into a hamburger menu so that the text does not overlap. This makes the website responsive.
 
-          <li>I removed the background image and plan to include a dynamic slideshow of images from the farm. This enables the user to see image without hindering readability of text. </li>
-          <li>I added a slogan to catch the eye of the user. This draws the user into this section of the website, which should provide a brief description about the farm. If the user only reads one portion of the website, it should be this block of text. 
+          <li>I removed the background image and plan to include a dynamic <b>slideshow of images </b>from the farm. This enables the user to see image without hindering readability of text. </li>
+          <li>I added a <b>slogan </b>to catch the eye of the user. This draws the user into this section of the website, which should provide a brief description about the farm. If the user only reads one portion of the website, it should be this block of text. 
           </li>
-          <li>I included a dynamic button. The goal of the website is to draw as many users to the farm as possible, and this button should be the item that pops out most to the user.</li>
-          <li>Short description with hyperlinks of events/features that make this apple orchard unique from others. </li>
-          <li>I designated a larger portion of the website for the location. The location should be made evident to the users in order to draw them to the farm. The hours for the farm are all listed in one place.</li>
-          <li>Social media is blocked together in one portion of the website. </li>
+          <li>I included a <b>dynamic button</b>. The goal of the website is to draw as many users to the farm as possible, and this button should be the item that pops out most to the user.</li>
+          <li><b>Short description</b> with hyperlinks of events/features that make this apple orchard unique from others. </li>
+          <li>I designated a larger portion of the website for the <b>location</b>. The location should be made evident to the users in order to draw them to the farm. The hours for the farm are all listed in one place.</li>
+          <li><b>Social media</b> is blocked together in one portion of the website. </li>
         </ol>
 
         <br>
@@ -229,12 +245,10 @@
           I then used Figma to create high-fidelity prototypes of what the website will look like, taking into account responsiveness of the website.
         </p>
 
-        <div class="interface">
-          <img class="gallery-item" src="./assets/hifi-web.png" alt="Hifi prototype of website" width="800">
-        </div>
-
-        <div class="interface">
-          <img class="gallery-item" src="./assets/hifi-smaller.png" alt="Hifi prototype of mobile and website" width="800">
+        <div class="lofi-interface">
+          <img class="gallery-item" src="./assets/hifi-web.png" alt="Hifi prototype of website" height="800">
+          <img class="gallery-item" src="./assets/hifi-tablet.jpg" alt="Hifi prototype of mobile and website" height="800">
+          <img class="gallery-item" src="./assets/hifi-mobile.png" alt="Hifi prototype of mobile and website" height="800">
         </div>
 
         <br>
@@ -242,7 +256,7 @@
 
 
 
-        <h2>Responsive Redesign</h2>
+        <h2>Responsive Redesign of Website</h2>
         <p>
           Finally, I created a website using HTML, CSS, and Bootstrap to demonstrate my high fidelity prototype. Given that that is my first project with HTML, there are a few issues that should be noted: 
         </p>
@@ -254,11 +268,11 @@
             I used Bootstrap to create interactive buttons. Because there are limitations with Bootstrap, I was unable to provide all the buttons with the same intended design as provided in the visual design guide. Hypothetically, the website should stick with the color and theme as indicated in the visual design guide. 
           </li>
         </ul>
+
+        <br>
         <p>
           My final website design can be found <a href="https://sleepyotter123.github.io/russel-orchards/">here</a>
         </p>
-
-        <br>
         <br>
 
 

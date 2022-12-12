@@ -109,8 +109,30 @@ h4 {font-family: Arial; }
   padding: 15px;
 }
 
+.zoom{
+  transition: transform .5s;
+  margin: 0 auto;
+}
 
+.zoom:hover {
+  transform: scale(1.1);
+}
 
+.website-buttons{
+  display: flex;
 
+}
 
+.button-image{
+  padding: 10px;
+}
 
+.lofi-interface{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.gallery-item{
+  padding: 5px;
+}
